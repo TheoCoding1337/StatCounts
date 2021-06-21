@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">StatCounts - Real-Time Global Clicker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/StatCounts">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">API</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="alert alert-success">
+        <strong>News:</strong> Join my 24/7 livestream! (https://youtube.com/watch?v=fpNMFpvjW4I) I'm streaming mr (dot) beast's growth! and jimmy to 40M subs! (and subscribe!)
+      </div>
+
+<body style="background-color: rgb(74, 74, 74);">
+
+<html>
+	<head>
+		<title>Real-Time Global Clicker</title>
+		<link rel="stylesheet" href="odometer-theme-minimal.css" />
+		<script src="odometer.js"></script>
+		<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+		<link rel="stylesheet" href="livecountsbutreddit.css" />
+		
+	<style>
+	
+	*{font-family:Arial !Important}
+	
+	</style>
+	
+		<style>
+		
+		#channelSubs{
+		
+			font-size:12vh;
+			
+		
+		}
+		
+
+        #channelSubs2{
+		
+        font-size:5vh;
+        
+    
+    }
+
+    #clickrate{
+		
+        font-size:3vh;
+        
+    
+    }
+
+    #Milestone{
+		
+        font-size:5vh;
+        
+    
+    }
+		</style>
+	
+	
+		<style>
+		
+		</style>
+	
+	<style>
+	
+	.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
+    font-family: Arial, sans-serif;
+    line-height: 1.25em
+}
+	
+	</style>
+	
+<style>
+
+#channelSubs,
+#container,
+#subscribeButton,
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value,
+.odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value,
+canvas {
+    
+}
+
+</style>
+<style>
+*{text-align: center;}
+
+#PostContents {
+    color: white;
+}
+
+
+#imagething2 {
+    border: solid .5vh !Important;
+    border-radius: 100%;
+    border-color: rgb(255, 255, 255) !Important;
+}
+
+#imagething {
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+	</head>
+	<script type="text/javascript">
+	</script>
+		<body id="body" style="background-color: rgb(208, 228, 254);">
+				
+				<b id=channelName" style="color: rgb(255, 255, 255); border: 3px none green;"></b>
+				
+				
+				
+
+									
+
+
+				<br></br>
+					<div class="container p-3 my-3 bg-dark text-white">       
+                        <img src="https://i.ya-webdesign.com/images/white-globe-png-8.png" id="imagething2" style="width:150px"></p>
+					<p style="font-size: 6vh;"id="PostContents">Global Clicker</p>
+                <p class="odometer odometer-auto-theme" id="channelSubs" style="color: rgb(255, 255, 255);">0</p>
+                <p id="subscriberslola" style="color: rgb(230, 230, 230);">Clicks</p>
+                <a button="" href="http://global-clicker.mrcode.io" type="button" class="btn btn-danger btn-block">Add to This Counter!</a>
+                    </div>
+                <div class="container p-3 my-3 bg-dark text-white">  
+                    <p class="odometer odometer-auto-theme" id="clickrate" style="color: rgb(255, 255, 255);">0</p>
+                <p id="subscriberslola3" style="color: rgb(230, 230, 230);">Avg Clicks/Hr</p>
+				</div>
+            
+            <div class="container p-3 my-3 bg-dark text-white"> 
+                <p class="odometer odometer-auto-theme" id="Milestone" style="color: rgb(255, 255, 255);">0</p>
+                <p id="subscriberslola" style="color: rgb(230, 230, 230);">The Final Goal</p>
+                <div id="chart"></div>
+            </div>
+            <script src="https://code.highcharts.com/stock/highstock.js"></script>
+            						    
+            <script type="text/javascript">
+            var line = "#ff5454"
+
+            var chart = new Highcharts.chart({
+  chart: {
+      renderTo: 'chart',
+      type: 'spline',
+        zoomType: 'x',
+        backgroundColor: 'transparent',
+        plotBorderColor: 'transparent'
+  },
+  title: {
+      text: 'Total Clicks'
+  },
+  xAxis: {
+      type: 'datetime',
+      tickPixelInterval: 500,
+        gridLineColor: '#666666',
+        labels: {
+            style: {
+                color: '#ff5454'
+            }
+        },
+        lineColor: line,
+        minorGridLineColor: '#505053',
+        tickColor: line,
+        title: {
+            style: {
+                color: '#ff7d7d'
+            }
+        }
+  },
+  yAxis: {
+      title: {
+          text: ''
+      },
+        gridLineColor: 'transparent',
+        labels: {
+            style: {
+                color: '#666666'
+            }
+        },
+        lineColor: '#ff5454',
+        minorGridLineColor: 'transparent',
+        tickColor: '#666666'
+  },
+  credits: {
+      enabled: false,
+      text: ""
+  },
+
+  series: [{
+    showInLegend: false,
+     name: 'Total # of Clicks',
+    marker: { enabled: false },
+    color: '#ff5454',
+    lineColor: '#ff5454'
+  }]
+});
+            
+            </script>	
+											       
+                <script type="text/javascript">
+                    $(document).ready(function() {
+	
+    var channelName = "";
+    
+    loadChannel("realdonaldtrump")
+    
+    function loadChannel(name) {
+        channelName = name;
+        var url = 'https://api.allorigins.win/raw?url=http://global-clicker.mrcode.io/getpoints'
+        $.getJSON(url, function(data) {
+            channelSubs.innerHTML = data
+
+            if (data > 60000000) {
+            var goalhandle = 70000000 - data
+            Milestone.innerHTML = goalhandle
+            } else {
+                var goalhandle = 70000000 - data
+            Milestone.innerHTML = goalhandle
+            }
+
+            var chartthingidk = data
+            chart.series[0].addPoint([Date.now(),chartthingidk])
+        });
+        
+    }
+    
+    setInterval(function() {
+
+        
+    
+                    var url = 'https://api.allorigins.win/raw?url=http://global-clicker.mrcode.io/getpoints'
+        $.getJSON(url, function(data) {
+            channelSubs.innerHTML = data
+            if (data > 90000000) {
+            var goalhandle = 100000000 - data
+            Milestone.innerHTML = goalhandle
+            } else {
+                var goalhandle = 70000000 - data
+            Milestone.innerHTML = goalhandle
+            }
+            var clickrates  = [
+
+
+
+            ]
+            var chartthingidk = data
+            if (chart.series[0].points.length == 1500) chart.series[0].data[0].remove();
+            chart.series[0].addPoint([Date.now(),chartthingidk])
+            
+            
+            
+        });
+
+
+        var url = 'https://cors.t1ch.com/https://pastebin.com/raw/zEQ3ZvxN'
+        $.getJSON(url, function(data) {
+            clickrate.innerHTML = data.clicksCount
+            
+            
+            
+        });
+        
+    }, 2000);
+    
+    $('#updateChannel').click( function() {
+        loadChannel($('#choose').val());
+        
+    });
+        
+    
+
+});
+
+                
+                
+                </script>
+				 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172872844-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172872844-1');
+</script>
+									      <!-- Default Statcounter code for statcounts.com
+https://site.statcounts.com/ -->
+<script type="text/javascript">
+var sc_project=12359926; 
+var sc_invisible=0; 
+var sc_security="cae44fab"; 
+var sc_text=2; 
+var sc_https=1; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12359926/0/cae44fab/0/"
+alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+<a href="https://statcounter.com/p12359926/?guest=1">uh</a>
+				
+				
+        </body>
+    </head>
+</html>
